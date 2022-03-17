@@ -57,13 +57,13 @@
 ```
 ### Work Experience and Learn information about technologies
  * JavaScript Manual on https://learnjavascript.ru (in progress);
- * .Net course on Metanit (https://metanit.com/sharp/);
- * Frontend on Udemy.com (Udemy.com)(in progress).
+ * .Net course on Metanit https://metanit.com/sharp/;
+ * Frontend on Udemy.com Udemy.com)(in progress.
 
 ### Education
 * BSUIR;
 * Udemy;
-* Cursera.
+* Coursera.
 
 ### English
  Pre-intermediate, Lingualo, Online-courses, London Grammar Practice WorkBook
