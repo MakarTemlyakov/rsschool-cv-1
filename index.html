@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>СV HTML, CSS</title>
+</head>
+
+<body>
+    <section class="cv">
+        <div class="container">
+            <div class="cv-info">
+                <img src="img/user.jpg" alt="">
+                <h1 class="cv-info__name">Makar Temlyakov</h1>
+                <h2 class="cv-info__jobtitle">Junior frontend developer</h2>
+                <div class="cv-info__wrapper">
+                    <h3 class="cv-info__title">Contact Information</h3>
+                    <div class="cv-info__phone"><span>Phone: +375333720488</span></div>
+                    <div class="cv-info__email"><span>Email: makartemlyakov@gmail.com</span></div>
+                </div>
+                <div class="cv-info__wrapper cv-info__wrapper_about">
+                    <h3 class="cv-info__title cv-info__title_about">About myself</h3>
+                    <div class="cv-info__about">
+                        My carrer started with experience working with .Net on Backend side, where I learned and worked
+                        with MVC pattern,
+                        sometimes I also worked with API and bussines logic on back-end, fixing bags, make refactoring
+                        and working with database.
+                        Project on which I worked was commerce solution, where users can buy or to sell some things.
+                        I also a litle working with Frontend stack like React,TypeScript, Redux, on this side I often
+                        fixed bags, working with features and writting autotest’s.
+                        When I worked on Frontend side, I have a interest in Frontend stack and I wanna to know more
+                        information about it.
+                    </div>
+                </div>
+                <div class="cv-info__wrapper">
+                    <div class="cv-info__skills">
+                        <h3 class="cv-info__title">Technologies stack and skills</h3>
+                        <ul class="cv-info__list">
+                            <li><i>C#,.Net, MSSQL, Entity Framework, ASP.NET MVC;</i></li>
+                            <li>JavaScript,TypeScript;</li>
+                            <li>React,Redux;</li>
+                            <li>CSS,HTML;</li>
+                            <li>VS Code, Visual Studio, Managment SQL Studio;</li>
+                            <li>Unit Tests/Selenium/Mocha.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cv-info__wrapper cv-info__wrapper_code">
+                    <div class="cv-info__code">
+                        <h2 class="cv-info__title">Code from my test project:</h2>
+                        <pre>
+                    <code class="cv-info__code-sharp">
+                    <span>C#</span>
+                    public async Task<List<PlayersMatchInfo>> GetPlayersMatchInfo()
+                    {
+                            var content = await HttpHelper.GetContent(_httpClient, "api/players/25907144/matches?project=heroes");
+                            var matches = JsonConvert.DeserializeObject<List<MatchPlayersDto>>(content);
+                            var viewMatches = _mapper.Map<List<PlayersMatchInfo>>(matches);
+                            return viewMatches;
+                    }
+                    public async Task<List<PlayersMatchInfo>> GetPlayersMatchInfo()
+                    {
+                            var content = await HttpHelper.GetContent(_httpClient, "api/players/25907144/matches?project=heroes");
+                            var matches = JsonConvert.DeserializeObject<List<MatchPlayersDto>>(content);
+                            var viewMatches = _mapper.Map<List<PlayersMatchInfo>>(matches);
+                            return viewMatches;
+                    }
+                    </code>
+                    </pre>
+                        <pre>
+                    <code class="cv-info__code-js">
+                    <span>JavaScript</span>
+                    const getUserName = (userId: number) => {  
+                        return usersInfo
+                            .filter(x => x.id === userId)
+                            .map(x =>
+                            x.gender === "Male"
+                                ? `Mr.${x.first_name} ${x.last_name}`
+                                : `Ms.${x.first_name} ${x.last_name}`
+                            )
+                           }
+                        };
+                    const getUserCompanyInfo = (userId: any) => {
+                        return companyInfo
+                            .filter(x => x.id === userId)
+                            .map((x, id: number) => {
+                            return (
+                              &lt;div key={id}&gt;
+                                 &lt;p&gt;Company: {x.title}&lt;/p&gt;
+                                 &lt;p&gt;Industry: {x.industry}&lt;/p&gt;
+                              &lt;/div&gt;
+                            );
+                        });
+                    };
+                    </code>
+                </pre>
+                    </div>
+                </div>
+                <div class="cv-info__wrapper">
+                    <h3 class="cv-info__title">Work experience and learn information about technologies</h3>
+                    <div class="cv-info__experience">
+                        <ul class="cv-info__list">
+                            <li>JavaScript manual on <a href="https://learn.javascript.ru">learnjs.ru</a> (in progress);</li>
+                            <li>.Net course on <a href="https://metanit.com/sharp/">Metanit</a>;</li>
+                            <li>Frontend on <a href="https://udemy.com/">Udemy.com</a> (in progress).</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cv-info__wrapper">
+                    <div class="cv-info__education">
+                        <h3 class="cv-info__title">Education</h3>
+                        <ul class="cv-info__list">
+                            <li>BSUIR;</li>
+                            <li>Udemy;</li>
+                            <li>Coursera.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cv-info__wrapper cv-info__wrapper_english">
+                    <div class="cv-info__english">
+                        <h3 class="cv-info__title">English</h3>
+                        <i>Pre-intermediate, Lingualo, Online-courses, London Grammar Practice WorkBook</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
